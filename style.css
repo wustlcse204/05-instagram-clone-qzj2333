@@ -1,0 +1,282 @@
+body
+{
+    background-color: rgb(226, 224, 224);
+    margin: 0;
+    padding: 0;
+}
+
+#nav
+{
+    border-bottom: 1px solid grey;
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    text-align: center;
+}
+
+#logo
+{
+    float: left;
+    padding-left: 3%;
+}
+
+#search
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 200px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 4px;
+    background-image: url(search.jpg); 
+    background-repeat: no-repeat;
+    background-position-x: 60px;
+    background-size: 20px;
+}
+
+#search:focus
+{
+    background-color: linen;
+    background-image: none;
+}
+
+#navIcons
+{
+    float: right;
+    padding-right: 3%;
+}
+
+#content
+{
+    padding-top: 60px;
+}
+
+.outsideBox
+{
+    position: relative;
+    border: 1px solid grey;
+    background-color: white;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+.main1
+{
+    margin: 3%;
+}
+
+.headIcon
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main2
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mainPicture img
+{
+    display: block;
+    width: 100%;
+    padding-top: 2%;
+
+}
+
+.mainIconRight
+{
+    float: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.link
+{
+    
+    color: blue;
+}
+
+.grey
+{
+    display: block;
+    color: grey;
+    font-size: 10pt;
+}
+
+.comment
+{
+    height: 40px;
+}
+
+.commentInput
+{
+    height: 30px;
+    border: 0px;
+    font-weight: 100;
+    font-size: 12pt;
+}
+
+.more
+{
+    float: right;
+}
+
+.boldGrey
+{
+    color: grey;
+    font-weight: bold;
+}
+
+.boldBlue
+{
+    float: right;
+    color: blue;
+    font-weight: bold;
+}
+
+.suggestionHead, .storyHead
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.suggestionGrid
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    height: 200px;
+    grid-gap: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.suggestionCard
+{
+    border: 1px solid grey;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.check
+{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+.suggestionCard .grey
+{
+    padding-top: 2%;
+}
+
+.followButton
+{
+    
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-top: 5%;
+    padding: 5% 20%;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#sideBar
+{
+    position: fixed;
+    top: 68px;
+    right: 10px;
+    width: 35%;
+}
+
+.storyBox
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.story
+{
+    overflow: auto;
+    padding-top: 3%;
+}
+
+.leftImage
+{
+    float: left;
+}
+
+.rightText
+{
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.boldBlack
+{
+    font-weight: bold;
+    float: right;
+}
+
+#scrollBar
+{
+    overflow: scroll;
+    height: 250px;
+}
+
+.headIconBorder
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid red;
+}
+
+p
+{
+    color: grey;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+a
+{
+    color: grey;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (min-width: 400px) and (max-width: 800px) 
+{
+    .storyBox
+    {
+        display: none;
+    }
+  
+    .outsideBox
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
